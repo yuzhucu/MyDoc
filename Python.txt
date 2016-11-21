@@ -1,0 +1,209 @@
+Python金融股票爬虫实战源码大全
+原创 2016-09-12 知乎@阿橙 Python中文社区
+Stock [1]- 终端实时获取股票价格，实时查询股票价格，默认查询了沪指、深指。需要安装requests库，通过调用新浪股票API，实时查询股票价格，支持查询多支股票，通过threading多线程同时查询结果
+
+tushare [2]- 是实现对股票/期货等金融数据从数据采集、清洗加工 到 数据存储过程的工具，满足金融量化分析师和学习数据分析的人在数据获取方面的需求，它的特点是数据覆盖范围广，接口调用简单,响应快速
+
+
+
+
+chinastock [3]- 中国股票行情数据分析。能够获得股票部分金融数据、日线，周线，60分钟数据线，月线，30分钟数据及历史数据。该项目依赖于httplib2，和beautifulsoup。python开发环境是2.7.5
+
+Stockholm [4]- 一个股票数据（沪深）爬虫和选股策略测试框架，数据基于雅虎YQL和新浪财经。根据选定的日期范围抓取所有沪深两市股票的行情数据。根据指定的选股策略和指定的日期进行选股测试。计算选股测试实际结果。支持使用表达式定义选股策略和多线程处理。
+
+
+
+
+easyquotation [5]- 实时获取新浪 / Leverfun 的免费股票以及 level2 十档行情 / 集思路的分级基金行情。获取新浪的免费实时行情、腾讯财经的免费实时行情、leverfun 的免费 Level 2 十档行情、集思路的分级基金数据。开发环境 : Ubuntu 15.10 / Python 3.5。
+
+get_recommend_stock [6]- 抓取同花顺level2广告页股票推荐数据，并发送邮件给指定邮箱。涉及简单的jsonp解析以及如何使用python发送邮件的操作。
+
+
+
+
+stocks [7]- 每天从网上抓取股票数据并保存到本地以供分析，包括A股、中小板、创业板股票。上班时候可以偷偷看。。。
+
+mystock [8]- linux查看实时查看股票信息(国内股票)，再也不用偷偷摸摸上班看手机啦。。
+
+  [1]: https://github.com/felixglow/Stock
+  [2]: https://github.com/waditu/tushare
+  [3]: https://github.com/nooperpudd/chinastock
+  [4]: https://github.com/benitoro/stockholm
+  [5]: https://github.com/shidenggui/easyquotation
+  [6]: https://github.com/wlei-fx/stocks
+  [7]: https://github.com/1514louluo/mystock
+  [8]: https://github.com/zhoudayang/get_recommend_stock
+
+
+
+Python网络爬虫实战项目大全，最后一个亮了
+原创 2016-09-10 知乎@橙哥 Python中文社区
+wcspider [1]- 微信公众号爬虫。使用爬虫搜索所有微信公众号资料及其文章，通过搜狗搜索获取公众号的openid，创建公众号历史消息请求URL，解析出历史消息总量、历史消息总页数、单个历史消息的XML，根据读取到的所有的历史消息XML内容，创建RSS文件。
+
+
+
+DouBanSpider  [2]- 豆瓣读书爬虫。可以爬下豆瓣读书标签下的所有图书，按评分排名依次存储，存储到Excel中，可方便大家筛选搜罗，比如筛选评价人数>1000的高分书籍；可依据不同的主题存储到Excel不同的Sheet ，采用User Agent伪装为浏览器进行爬取，并加入随机延时来更好的模仿浏览器行为，避免爬虫被封。
+
+
+zhihu_spider [3] - 知乎爬虫。此项目的功能是爬取知乎用户信息以及人际拓扑关系，爬虫框架使用scrapy，数据存储使用mongo
+
+
+
+
+bilibili-user [4] - Bilibili用户爬虫。总数据数：20119918，抓取字段：用户id，昵称，性别，头像，等级，经验值，粉丝数，生日，地址，注册时间，签名，等级与经验值等。抓取之后生成B站用户数据报告。
+
+
+SinaSpider  [5]- 新浪微博爬虫。主要爬取新浪微博用户的个人信息、微博信息、粉丝和关注。代码获取新浪微博Cookie进行登录，可通过多账号登录来防止新浪的反扒。主要使用 scrapy 爬虫框架。
+
+
+distribute_crawler  [6]- 小说下载分布式爬虫。使用scrapy,redis, mongodb,graphite实现的一个分布式网络爬虫,底层存储mongodb集群,分布式使用redis实现,爬虫状态显示使用graphite实现，主要针对一个小说站点。
+
+
+CnkiSpider  [7]- 中国知网爬虫。设置检索条件后，执行src/CnkiSpider.py抓取数据，抓取数据存储在/data目录下，每个数据文件的第一行为字段名称。
+
+LianJiaSpider [8] - 链家网爬虫。爬取北京地区链家历年二手房成交记录。涵盖链家爬虫一文的全部代码，包括链家模拟登录代码。
+
+
+scrapy_jingdong[9]- 京东爬虫。基于scrapy的京东网站爬虫，保存格式为csv。
+
+QQ-Groups-Spider  [10]- QQ 群爬虫。批量抓取 QQ 群信息，包括群名称、群号、群人数、群主、群简介等内容，最终生成 XLS(X) / CSV 结果文件。
+
+
+wooyun_public  [11]-乌云爬虫。 乌云公开漏洞、知识库爬虫和搜索。全部公开漏洞的列表和每个漏洞的文本内容存在mongodb中，大概约2G内容；如果整站爬全部文本和图片作为离线查询，大概需要10G空间、2小时（10M电信带宽）；爬取全部知识库，总共约500M空间。漏洞搜索使用了Flask作为web server，bootstrap作为前端。
+
+
+MyCar_python  [12]- Tumblr爬虫。谨慎驾驶，小心翻车。
+
+  [1]: https://github.com/hexcola/wcspider
+  [2]: https://github.com/lanbing510/DouBanSpider
+  [3]: https://github.com/LiuRoy/zhihu_spider
+  [4]: https://github.com/airingursb/bilibili-user
+  [5]: https://github.com/LiuXingMing/SinaSpider
+  [6]: https://github.com/gnemoug/distribute_crawler
+  [7]: https://github.com/yanzhou/CnkiSpider
+  [8]: https://github.com/lanbing510/LianJiaSpider
+  [9]: https://github.com/taizilongxu/scrapy_jingdong
+  [10]: https://github.com/caspartse/QQ-Groups-Spider
+  [11]: https://github.com/hanc00l/wooyun_public
+  [12]: https://github.com/Thoxvi/MyCar_python
+
+
+微博爬虫开源项目汇总大全（长期更新、欢迎补充）
+原创 2016-09-07 知乎@橙哥 Python中文社区
+ - [SinaSpider][1] - 基于scrapy和redis的分布式微博爬虫。SinaSpider主要爬取新浪微博的个人信息、微博数据、关注和粉丝。数据库设置Information、Tweets、Follows、Fans四张表。爬虫框架使用Scrapy，使用scrapy_redis和Redis实现分布式。此项目实现将单机的新浪微博爬虫重构成分布式爬虫。
+
+ - [sina_reptile][2] -这是一个关于sina微博的爬虫，采用python开发，并修改了其sdk中的bug，采用mongodb存储，实现了多进程爬取任务。获取新浪微博1000w用户的基本信息和每个爬取用户最近发表的50条微博,使用python编写，多进程爬取，将数据存储在了mongodb中。
+ - [sina_weibo_crawler][3]-基于urlib2及beautifulSoup实现的微博爬虫系统。利用urllib2加beautifulsoup爬取新浪微博,数据库采用mongodb，原始关系以txt文件存储，原始内容以csv形式存储，后期直接插入mongodb数据库。
+
+ - [sina-weibo-crawler][4]-方便扩展的新浪微博爬虫。WCrawler.crawl()函数只需要一个url参数，返回的用户粉丝、关注里面都有url，可以向外扩展爬取，并且也可以自定义一些过滤规则。
+ - [weibo_crawler][5]-基于Python、BeautifulSoup、mysql微博搜索结果爬取工具。本工具使用模拟登录来实现微博搜索结果的爬取。
+
+ - [weibo_crawler][6] - 实现了抓取指定uid的微博数据的功能。
+ - [SinaMicroblog_Creeper-Spider_VerificationCode][7]-新浪微博爬虫，获得每个用户和关注的，粉丝的用户id存入xml文件中，BFS，可以模拟登陆，模拟登陆中的验证码会抓取下来让用户输入。
+  [1]: https://github.com/LiuXingMing/SinaSpider
+  [2]: https://github.com/gnemoug/sina_reptile
+  [3]: https://github.com/yanshengli/sina_weibo_crawler
+  [4]: https://github.com/intfloat/sina-weibo-crawler
+  [5]: https://github.com/meibenjin/weibo_crawler
+  [6]: https://github.com/rabintang/weibo_crawler
+  [7]: https://github.com/somethingx64/SinaMicroblog_Creeper-Spider_VerificationCode
+
+
+Python自然语言处理资料库（长期更新，欢迎补充）
+原创 2016-09-08 知乎@阿橙 Python中文社区
+
+
+LTP [1]- 语言技术平台(LTP) 提供包括中文分词、词性标注、命名实体识别、依存句法分析、语义角色标注等丰富、 高效、精准的自然语言处理技术。经过哈工大社会计算与信息检索研究中心 11 年的持续研发和推广，LTP 已经成为国内外最具影响力的中文处理基础平台。
+
+NLPIR汉语分词系统 [2]- 又名ICTCLAS2013，主要功能包括中文分词；词性标注；命名实体识别；用户词典功能；支持GBK编码、UTF8编码、BIG5编码。新增微博分词、新词发现与关键词提取。
+
+结巴中文分词 [3]- 支持三种分词模式：精确模式，试图将句子最精确地切开，适合文本分析；全模式，把句子中所有的可以成词的词语都扫描出来,速度非常快，但是不能解决歧义；搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。支持繁体分词；支持自定义词典。
+
+
+Boson中文语义开放平台 [4]- Boson中文语义开放平台提供使用简单、功能强大、性能可靠的中文自然语言分析云服务。通过自主研发的中文分词、句法分析、语义联想和实体识别技术，结合海量行业语料的不断积累，为企业和广大开发者提供简单、强大、可靠的中文语义分析云端API。
+
+NLPCN [5]- NLPCN是一个非盈利的自然语言处理组织。遵循开放自由的理念，乐于分享，勤于开源，为为数不多的数据处理的开发者提供了一个资源共享,开源项目介绍,开发者展示的平台。
+
+THUCTC [6]- 是由清华大学自然语言处理实验室推出的中文文本分类工具包，能够自动高效地实现用户自定义的文本分类语料的训练、评测、分类功能。文本文类通常包括特征选取、特征降维、分类模型学习三个步骤。
+
+
+-SnowNLP [7]- 一个用来处理中文文本的库。它是一个python写的类库，可以方便的处理中文文本内容，是受到了TextBlob的启发而写，由于现在大部分的自然语言处理库基本都是针对英文的，于是写了一个方便处理中文的类库，并且和TextBlob不同的是，这里没有用NLTK，所有的算法都是自己实现的，并且自带了一些训练好的字典。
+
+TextGrocery [8]- 简单高效的短文本分类工具，基于 LibLinear 和 Jieba。
+
+  [1]: http://www.ltp-cloud.com/
+  [2]: http://ictclas.nlpir.org/
+  [3]: https://github.com/fxsjy/jieba
+  [4]: http://bosonnlp.com/
+  [5]: http://www.nlpcn.org/group
+  [6]: http://thuctc.thunlp.org/
+  [7]: https://github.com/isnowfy/snownlp
+  [8]: https://github.com/2shou/TextGrocery: http://www.ltp-cloud.com/
+  [2]: http://ictclas.nlpir.org/
+  [3]: https://github.com/fxsjy/jieba
+  [4]: http://bosonnlp.com/
+  [5]: http://www.nlpcn.org/group
+  [6]: http://thuctc.thunlp.org/
+  [7]: https://github.com/isnowfy/snownlp
+  [8]: https://github.com/2shou/TextGrocery
+
+
+Python支付接口汇总大全（包含微信、支付宝等，长期更新、欢迎补充）
+原创 2016-09-09 知乎@阿橙 Python中文社区
+微信支付接口
+
+
+wzhifuSDK [1]- 由微信支付SDK 官方PHP Demo移植而来，v3.37
+
+weixin_pay [2]- 是一个简单的微信支付的接口
+
+weixin_pay [3]- 微信支付接口(V3.3.7)类库。此类库目前只提供了三种接口的操作类：①统一支付接口②订单查询接口③JSAPI 支付
+
+wxpay [4]- 微信支付非官方Python工具库。主要提供函数：get_brand_wc_pay_request：获取传递给getBrandWCPayRequest的参数；notify_verify：验证微信请求。
+
+flask-weixin-pay [5]- 微信支付的flask扩展。
+
+wechat_pay_py [6]- 实现微信支付V2和V3。
+
+weixin-python [7]- 微信SDK - 包括支付,公众号,登陆,消息处理等。
+
+支付宝接口
+
+
+alipay_python [8]- 是支付宝接口的python版本，提供了担保交易，即时到帐和自动发货的接口。增加了担保交易，确认发货和简单的测试站点(django)。
+
+django-oscar-alipay [9]- 是django-oscar商城系统的支持多种支付方式的支付集成 实现了alipay担保交易，即时到帐和自动发货等接口。详细实现了django-oscar的payment支付部分。
+
+alipay_py [10]- 支付宝移动支付的python实现。可帮助大家快速接入支付宝快捷支付。
+
+alipay_tornado [11]- 是支付宝接口的tornado版本，提供了担保交易，即时到帐和自动发货的接口。
+
+alipay_mobile_for_python [12]- 是支付宝手机网站支付接口 python2 实现包。
+
+其它支付接口
+
+
+unionpay [13]- 银联移动支付服务器端python SDK。功能：trade: 发送订单推送请求，获得交易流水号；parse_response: 处理银联后台回调；query: 发起交易信息查询，获得交易信息字典。
+
+
+
+
+python-tenpay [14]- 财付通支付接口的python版本
+
+openunipay [15]- 统一支付接口 - 集成了微信、支付宝支付。为微信支付，支付宝支付提供统一接口。做到一次集成即可使用多种支付渠道。
+
+  [1]: https://github.com/Skycrab/wzhifuSDK
+  [2]: https://github.com/kinglio8520/weixin_pay
+  [3]: https://github.com/ddkangfu/weixin_pay
+  [4]: https://github.com/deckmon/wxpay
+  [5]: https://github.com/zakzou/flask-weixin-pay
+  [6]: https://github.com/richfisher/wechat_pay_py
+  [7]: https://github.com/zwczou/weixin-python
+  [8]: https://github.com/fengli/alipay_python
+  [9]: https://github.com/amyhoo/django-oscar-alipay
+  [10]: https://github.com/longzhang/alipay_py
+  [11]: https://github.com/billyellow/alipay_tornado
+  [12]: https://github.com/liukelin/alipay_mobile_for_python
+  [13]: https://github.com/raully7/unionpay
+  [14]: https://github.com/shelmesky/python-tenpay
+  [15]: https://github.com/panweifeng/openunipay
