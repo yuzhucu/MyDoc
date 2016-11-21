@@ -1,0 +1,9 @@
+1：PIP方式 
+
+C:\Users\Administrator>pip install Scrapy
+C:\Users\Administrator>pip install --upgrade Scrapy
+
+2：源码安装：python setup.py install
+3: easy_install requests
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
